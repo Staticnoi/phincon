@@ -1,0 +1,8 @@
+hour = int(input("Masukkan jam saat ini (0-23): "))
+
+if hour < 12:
+    print("Selamat pagi!")
+elif hour <= 17:
+    print("Selamat siang!")
+else:
+    print("Selamat malam!")
