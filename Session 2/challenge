@@ -1,0 +1,4 @@
+driving_age = 17
+my_age = int(input("Enter your age: "))
+
+print(my_age >= driving_age)
