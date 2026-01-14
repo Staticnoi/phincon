@@ -1,0 +1,6 @@
+favorite_color = input("Sebutkan warna favorit kamu: ").lower() # Ditambah lower() agar tidak terjadi error dalam perbandingan
+
+if favorite_color == "biru":
+    print("Itu juga warna favoritku!")
+
+print("Sampai jumpa!")
