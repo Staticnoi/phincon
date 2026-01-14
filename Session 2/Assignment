@@ -1,0 +1,17 @@
+import random # Agar "komputer" bisa memilih secara acak
+user = input("Pilih batu, gunting, atau kertas: ")
+computer = random.choice(["batu", "gunting", "kertas"])
+
+print("Kamu memilih:", user)
+print("Komputer memilih:", computer)
+
+if user == computer:
+    print("Seri!")
+elif user == "batu" and computer == "gunting":
+    print("Kamu menang!")
+elif user == "gunting" and computer == "kertas":
+    print("Kamu menang!")
+elif user == "kertas" and computer == "batu":
+    print("Kamu menang!")
+else:
+    print("Kamu kalah!")
