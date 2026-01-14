@@ -1,3 +1,0 @@
-driving_age = 17
-my_age = input("Enter your age: ")
-print (driving_age <= int(my_age))
