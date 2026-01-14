@@ -1,4 +1,0 @@
-driving_age = 17
-my_age = input("Enter your age: ")
-eligible = my_age == driving_age
-print (eligible)
