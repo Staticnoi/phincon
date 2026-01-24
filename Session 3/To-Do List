@@ -1,0 +1,40 @@
+tasks = []
+
+while True:
+    print("\n=== TO-DO LIST MANAGER ===")
+    print("1. Lihat semua tugas")
+    print("2. Tambah tugas")
+    print("3. Hapus tugas")
+    print("4. Keluar")
+
+    choice = input("Pilih menu (1-4): ")
+
+    if choice == "1":
+        if not tasks:
+            print("Belum ada tugas.")
+        else:
+            for i in range(len(tasks)):
+                print(f"{i + 1}. {tasks[i]}")
+
+    elif choice == "2":
+        new_task = input("Masukkan tugas baru: ")
+        tasks.append(new_task)
+        print("Tugas berhasil ditambahkan!")
+
+    elif choice == "3":
+        if not tasks:
+            print("Tidak ada tugas untuk dihapus.")
+        else:
+            for i in range(len(tasks)):
+                print(f"{i + 1}. {tasks[i]}")
+
+            index = int(input("Pilih nomor tugas yang ingin dihapus: ")) - 1
+            removed_task = tasks.pop(index)
+            print(f"Tugas '{removed_task}' berhasil dihapus.")
+
+    elif choice == "4":
+        print("Keluar dari program. Dadah 👋")
+        break
+
+    else:
+        print("Pilihan tidak valid, coba lagi.")
