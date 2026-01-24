@@ -1,0 +1,6 @@
+friends = ["Andi", "Budi", "Cali"]
+
+friends.append("Dina")
+friends.remove("Budi")
+
+print(friends)
