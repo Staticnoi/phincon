@@ -1,0 +1,10 @@
+films = [
+    "Interstellar",
+    "Inception",
+    "Spirited Away",
+    "Mr. Robot",
+    "The Dark Knight"
+]
+
+print("Film favorit saya adalah", films[3])
+print("Film favorit kedua saya adalah", films[0])
