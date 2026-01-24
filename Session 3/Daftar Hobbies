@@ -1,0 +1,2 @@
+hobbies = ["coding", "nonton film", "dengerin musik"]
+print(hobbies)
