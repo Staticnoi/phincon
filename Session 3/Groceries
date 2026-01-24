@@ -1,0 +1,6 @@
+fruits = ["apel", "pisang", "jeruk"]
+vegetables = ["wortel", "bayam", "kentang"]
+
+groceries = fruits + vegetables
+
+print("Saya perlu membeli", len(groceries), "barang dari toko.")
