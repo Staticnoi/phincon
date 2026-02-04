@@ -1,0 +1,9 @@
+weapon = {
+    "name": "Sword",
+    "damage": 25
+}
+
+weapon["rarity"] = "common"
+weapon["damage"] = 40
+
+print(weapon)
