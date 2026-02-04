@@ -1,0 +1,7 @@
+me = {
+    "name": "Arya",
+    "age": 16,
+    "favorite_hobby": "coding"
+}
+
+print(me)
