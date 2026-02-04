@@ -1,0 +1,26 @@
+current_room = "library"
+has_key = False
+
+while True:
+    if current_room == "library":
+        print("Kamu berada di Perpustakaan.")
+        action = input("Ketik 'get key' atau 'go corridor': ")
+
+        if action == "get key":
+            has_key = True
+            print("Kamu mendapatkan kunci! 🔑")
+        elif action == "go corridor":
+            current_room = "corridor"
+
+    elif current_room == "corridor":
+        print("Kamu berada di Koridor.")
+        action = input("Ketik 'unlock door' atau 'go library': ")
+
+        if action == "unlock door":
+            if has_key:
+                print("Pintu terbuka! Kamu menang! 🎉")
+                break
+            else:
+                print("Pintu terkunci, kamu butuh kunci!")
+        elif action == "go library":
+            current_room = "library"
