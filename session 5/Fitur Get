@@ -1,0 +1,10 @@
+me = {
+    "name": "Arya",
+    "age": 17,
+    "favorite_hobby": "coding",
+    "favorite_color": "blue"
+}
+
+print(me)
+print(me["favorite_hobby"])
+print(me.get("favorite_color"))
