@@ -1,0 +1,4 @@
+animals = ["kucing", "anjing", "elang"]
+
+for animal in animals:
+    print(f"Hewan {animal} adalah hewan yang keren!")
