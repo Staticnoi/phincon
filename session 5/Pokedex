@@ -1,0 +1,33 @@
+pokemon = {
+    "name": "Pikachu",
+    "level": 10,
+    "hp": 35,
+    "attack": 55
+}
+
+while True:
+    action = input("Choose action (view, lookup, edit, add, quit): ")
+
+    if action == "view":
+        print(pokemon)
+
+    elif action == "lookup":
+        key = input("Enter key: ")
+        print(pokemon.get(key, "Key not found"))
+
+    elif action == "edit":
+        key = input("Enter key to edit: ")
+        if key in pokemon:
+            value = input("Enter new value: ")
+            pokemon[key] = value
+        else:
+            print("Key not found")
+
+    elif action == "add":
+        key = input("Enter new key: ")
+        value = input("Enter value: ")
+        pokemon[key] = value
+
+    elif action == "quit":
+        print("Goodbye!")
+        break
