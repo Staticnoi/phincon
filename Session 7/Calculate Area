@@ -1,0 +1,6 @@
+def calculate_area(side_length):
+    area = side_length * side_length
+    return area
+
+result = calculate_area(7)
+print(result)
