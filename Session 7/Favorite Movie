@@ -1,0 +1,6 @@
+def print_favorite_movie():
+    print("Film favoritku: Interstellar")
+
+print_favorite_movie()
+print_favorite_movie()
+print_favorite_movie()
