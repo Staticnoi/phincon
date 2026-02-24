@@ -1,0 +1,4 @@
+def display_score(player_name, score):
+    print(f"Pemain {player_name} memiliki skor {score}.")
+
+display_score("Arya", 95)
