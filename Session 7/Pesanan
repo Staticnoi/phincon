@@ -1,0 +1,19 @@
+total_item_terjual = 0
+
+def proses_pesanan(pelanggan, *args, **kwargs):
+    global total_item_terjual
+
+    print(f"Pelanggan: {pelanggan}")
+
+    print("Menu dipesan:")
+    for item in args:
+        print(f"- {item}")
+
+    print("Catatan tambahan:")
+    for key, value in kwargs.items():
+        print(f"- {key}: {value}")
+
+    total_item_terjual += len(args)
+    print(f"Total item terjual sekarang: {total_item_terjual}")
+
+proses_pesanan("Arya", "Kopi", "Roti", gula="less", pedas=True)
